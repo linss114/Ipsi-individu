@@ -1,0 +1,25 @@
+public class NotYetSetException exception {
+    public NotYetSetException(String s) {super(s);}
+}
+public class Student {
+    private String name;
+
+    Student() {}
+
+    public String getName() {return name;}
+    public void setName(String n){name = n;}
+}
+public class Assignment {
+    private double mark = -1;
+    
+    Assignment(){}
+
+    public double getMark() throws NotYetSetException {
+        if(mark=-1){
+            throws new NotYetSetException("Mark is not yet set");
+        }
+        return mark;
+    }
+    public void setMark(int m) {mark=m;}
+}
+import jawa.util.Vector
